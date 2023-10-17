@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    font-style:vengeance-regular;
+}
+.navbar{
+    height:60px;
+
+    background-color:#131921;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    
+    
+}
+.logo{
+    width:130px;
+    height:50px;
+    
+    
+    
+    }
+.aclogo{
+    background-image: url(amazonlogo.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:50px;
+    width:100%;
+    align-self: center;
+}
+.border:hover{
+    border:1px solid white;
+
+}
+.box2{
+    height:16px;
+    width:277px;
+    align-items: center;
+    margin-left:15px;
+    margin-bottom:20px;
+    
+    
+}
+.addicon{
+    height:50px;
+    width:50px;
+    display:flex;
+    
+}
+.address{
+    font-size:0.85rem;
+    color:#ccc;
+    margin-left:8px;
+
+    
+    
+}
+.india{
+    font-size:1rem;
+    color:#fff;
+
+    
+}
+.box3{
+    display:flex;
+    width:620px;
+    height:40px;
+    border-radius:4px;
+    background-color:pink;
+    justify-content:space-evenly;
+
+}
+
+.box3:hover{
+    border:2px solid orange;
+
+}
+.searchselect{
+    background-color:#f3f3f3;
+    width:50px;
+    text-align:center;
+    border-top-left-radius:4px;
+    border-bottom-left-radius: 4px;
+    border:none;
+}
+.searchinput{
+    width:100%;
+    font-size:1rem;
+    border:none;
+    
+}
+
+.searchicon{
+    width:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2rem;
+    background-color:#febd68;
+    border-top-right-radius:4px;
+    border-bottom-right-radius: 4px;
+    color:#0f1111;
+}
+
+span{
+    font-size:0.7rem;
+
+}
+
+box42{
+    font-size:0.85rem;
+    font-weight:700;
+
+}
+
+.box5 i{
+    font-size:30px;
+}
+.box5{
+    font-size:0.85rem;
+    font-weight:700;
+}
+.box6{
+    display:flex;
+    height:39px;
+    background-color:#222f3d;
+    justify-content:space-evenly;
+    color:white;
+    align-items:center;
+}
+.panels p{
+    display:inline;
+    margin-left:10px;
+    
+}
+.panels{
+    width:70%;
+    font-size:0.85rem;
+}
+.lastpanel{
+    font-size:0.9rem;
+    font-weight:700;
+}
+.contentsection {
+
+    
+    height:400px;
+    background-image:url(topimage.jpg);
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.contenttext{
+    background-color:white;
+    color:black;
+    height:40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:0.85rem;
+    width:80%;
+    margin-bottom: 25px;
+}
+
+.contenttext a{
+    color:#007785;
+}
+
+.shopsection{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:rgb(8, 70, 8);
+}
+
+.box{
+   /* border:2px solid black;*/
+    height:400px;
+    width:23%;
+    padding:20px 0px 15px;
+    margin-top:15px;
+    background-color: white;
+    margin-bottom: 1rem;
+    
+}
+
+.shopimg1{
+    height:300px;
+    margin-top: 1rem;
+     
+}
+
+.innercontent{
+    margin-right:1rem;
+    margin-left:1rem;
+
+}
+
+.innercontent p{
+    color:#007785;
+}
+
+footer{
+    margin-top: 15px;
+}
+
+.foot1{
+    background-color:#37475a;
+    color:white;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.85rem;
+}
+
+.foot2{
+    background-color: #222f3d;
+    color:white;
+    height:300px;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+ul a{
+    display:block;
+}
+ ul p{
+    font-weight:700;
+ }
+
+ .foot3{
+    background-color: #222f3d;
+    color:white;
+    border-top:0.5px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ .logo1{
+    background-image: url(newamazonlogo.jpeg);
+    background-size: cover;
+    height:50px;
+    width:90px;
+ }
+
+ .pages{
+    background-color: rgb(11, 11, 35);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+    color:white;
+    
+ }
+ .pages a{
+    margin-left: 10px;
+ }
+
+ .copyright{
+    background-color: rgb(11, 11, 35);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+    color:white;
+}
