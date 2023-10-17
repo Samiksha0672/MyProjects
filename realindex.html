@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Railways</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Welcome To Indian Railways</h1>
+      </div>
+      <div class="logo"></div>
+      <div class="heading2">
+        <h2>WEIGHT MANAGEMENT SYSTEM</h2>
+      </div>
+
+      <div class="traindetails">
+        <h3>TRAIN DETAILS</h3>
+        <div class="traindetails2">
+          <div class="train No">Train No :</div>
+          <div class="name">Train Name :</div>
+          <div class="travelfrom">Travel From : To :</div>
+          <div class="Timing">Time Of Travelling From : To :</div>
+        </div>
+      </div>
+      <div class="liverecords">
+        <div id="day"></div>
+
+       
+       
+       <script>
+          // Function to update the day
+          function updateDay() {
+            const daysOfWeek = [
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+            ];
+            const now = new Date();
+            const dayElement = document.getElementById("day");
+
+            // Get the day of the week (0-6) and use it to index the array of days
+            const dayString = daysOfWeek[now.getDay()]; // Get the current day as a string
+
+            // Update the content of the element with the current day
+            dayElement.textContent = dayString;
+          }
+
+          // Call the updateDay function initially
+          updateDay();
+
+          // Update the day every second (if you need to)
+          // setInterval(updateDay, 1000);
+        </script>
+
+        <div id="liveDate"></div>
+
+        <script>
+          // Function to update the live date
+          function updateLiveDate() {
+            const now = new Date();
+            const liveDateElement = document.getElementById("liveDate");
+
+            // Format the date
+            const options = { year: "numeric", month: "long", day: "numeric" };
+            const dateFormatted = now.toLocaleDateString(undefined, options); // Customize the format as needed
+
+            // Update the content of the element with the formatted date
+            liveDateElement.textContent = dateFormatted;
+          }
+
+          // Call the updateLiveDate function initially
+          updateLiveDate();
+
+          // Update the live date every second (if you need to)
+          // setInterval(updateLiveDate, 1000);
+        </script>
+
+        <div id="liveTime"></div>
+
+        <script>
+          // Function to update the live time
+          function updateLiveTime() {
+            const now = new Date();
+            const liveTimeElement = document.getElementById("liveTime");
+
+            // Format the time
+            const options = {
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit",
+            };
+            const timeFormatted = now.toLocaleTimeString(undefined, options); // Customize the format as needed
+
+            // Update the content of the element with the formatted time
+            liveTimeElement.textContent = timeFormatted;
+          }
+
+          // Call the updateLiveTime function initially
+          updateLiveTime();
+
+          // Update the live time every second (if you need to)
+          setInterval(updateLiveTime, 1000);
+        </script>
+      </div>
+
+
+
+      <div class="allwagons">
+        <div class="wagons" id="check">
+          Wagon No.1
+          <p>Weight :</p>
+          <script>
+            var Weight=90;
+        // Access the element with id "myElement"
+            if (Weight > 80) {
+              var element =document.getElementById("check");
+              element.innerHTML = "Wagon 1 <br> Overloaded";
+                element.style.color = "red";
+                }
+              // You can now manipulate or work with the element
+              
+            else{
+              var element = document.getElementById("check");
+              element.innerHTML = "Wagon 1 <br> Underloaded";
+              element.style.color = "red";
+            }
+          </script>
+        </div>
+        
+        
+        
+        <div class="wagons">
+          Wagon No. 2
+          <p>Weight :</p>
+        </div>
+        <div class="wagons">
+          Wagon No. 3
+          <p>Weight :</p>
+        </div>
+        <div class="wagons">
+          Wagon No. 4
+          <p>Weight :</p>
+        </div>
+        <div class="wagons">
+          Wagon No. 5
+          <p>Weight :</p>
+        </div>
+        <div class="wagons">
+          Wagon No. 6
+          <p>Weight :</p>
+        </div>
+        <div class="wagons">
+          Wagon No. 7
+          <p>Weight :</p>
+        </div>
+        <div class="wagons">
+          Wagon No. 8
+          <p>Weight :</p>
+        </div>
+        <div class="wagons">
+          Wagon No. 9
+          <p>Weight :</p>
+        </div>
+        <div class="wagons">
+          Wagon No. 10
+          <p>Weight :</p>
+        </div>
+        <h3>Total Weight Of All Wagons :</h3>
+      </div>
+    </div>
+  </body>
+</html>
